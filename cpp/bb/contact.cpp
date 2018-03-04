@@ -21,7 +21,8 @@ private:
     std::map<std::string, int> m_data;
 };
 
-int main(){
+int main()
+{
     Contact cnt;
     int n;
     cin >> n;
@@ -31,12 +32,12 @@ int main(){
         cin >> op >> contact;
         if (op == "add")
         {
-            cnt.add(contact);    
+            cnt.add(contact);
         }
         else
         if (op == "find")
         {
-            cout << cnt.find(contact) << endl;    
+            cout << cnt.find(contact) << endl;
         }
     }
     return 0;
