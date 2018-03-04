@@ -1,25 +1,7 @@
-#include <map>
-#include <set>
-#include <list>
-#include <cmath>
-#include <ctime>
-#include <deque>
-#include <queue>
-#include <stack>
 #include <string>
-#include <bitset>
-#include <cstdio>
-#include <limits>
 #include <vector>
-#include <climits>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
-#include <numeric>
-#include <sstream>
 #include <iostream>
 #include <algorithm>
-#include <unordered_map>
 
 using namespace std;
 
@@ -34,7 +16,7 @@ long long count_inversions(vector<int> a) {
         auto ins = std::upper_bound(b, prev, *it);
         prev = it;
         if ((ins != e) && (*it < *ins))  {
-            auto d = std::distance(ins, it); 
+            auto d = std::distance(ins, it);
             std::cerr << "ins=" << *ins << " it=" << *it <<  " d=" << d << std::endl;
             std::swap(*it, *ins);
             res += d;
