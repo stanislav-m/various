@@ -33,7 +33,7 @@ class B {
 void f3()
 {
 	std::cout << "start of f3()" << std::endl;
-	A a(3); 
+	A a(3);
 	std::cout << "throw" << std::endl;
 	throw 3;
 	std::cout << "end of f3()" << std::endl;
@@ -63,7 +63,7 @@ int main()
 		std::cout << "before f1()" << std::endl;
 		B b;
 		f1();
-		std::cout << "after f1()" << std::endl;
+		std::cout << "after creation of b and after f1()" << std::endl;
 	}
 	catch (int ex)
 	{
